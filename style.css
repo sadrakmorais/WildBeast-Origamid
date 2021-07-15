@@ -8,6 +8,8 @@
 
 img {
   max-width: 100%;
+  display: block;
+  border-radius: 5px;
 }
 
 /*Grid Geral*/
@@ -53,15 +55,51 @@ img {
   margin-left: 30px;
 }
 
+/*SIDENAV*/
+
 .sidenav {
   grid-area: sidenav;
+  background: #fafbfc;
+  padding: 30px;
 }
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  transition: 0.2s ease-out;
+}
+
+.sidenav li a:hover {
+  background: #b07dfb;
+}
+
 .content {
   grid-area: content;
 }
+
+/*ANUNCIOS(ad)*/
+
 .ad {
   grid-area: ad;
+  background: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
+
+/*FOOTER*/
 .footer {
   grid-area: footer;
+  background: linear-gradient(-135deg, #8844ee, #b07dfb);
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  padding: 30px;
 }
